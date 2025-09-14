@@ -17,9 +17,9 @@ receivers:
 
 processors:
   batch:
-    send_batch_max_size: 100
+    send_batch_max_size: 20
     send_batch_size: 10
-    timeout: 10s
+    timeout: 5s
   resource:
     attributes:
       - action: insert

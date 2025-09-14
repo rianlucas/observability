@@ -21,7 +21,7 @@ import { OTLPMetricExporter } from '@opentelemetry/exporter-metrics-otlp-grpc';
 const SERVICE_NAME = 'app-rocketseat';
 
 const metricsExporter = new OTLPMetricExporter({
-  url: 'http://127.0.0.1:4317',
+  url: 'http://localhost:4317',
 });
 const metricReader = new PeriodicExportingMetricReader({
   exporter: metricsExporter,
